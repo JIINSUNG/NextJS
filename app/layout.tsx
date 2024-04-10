@@ -1,8 +1,13 @@
 import { Metadata } from "next";
-import Navigation from "../entities/Navigation";
+import Navigation from "../entities/navigation";
+import "../styles/global.css";
+import Footer from "../entities/footer/footer";
 
 export const metadata: Metadata = {
-  title: "Next.js 시작하기!",
+  title: {
+    template: "%s | Next Movies",
+    default: "Next Movies",
+  },
   description: "처음 만나는 Next.js",
   icons: "",
 };
@@ -18,6 +23,7 @@ export default function RootLayout({
         <>
           <Navigation />
           {children}
+          <Footer />
         </>
       </body>
     </html>
