@@ -20,7 +20,7 @@ import styles from "../../styles/home.module.css";
 // };
 
 // metaData는 서버사이드 랜더링에서만 사용 가능
-export const metaData = {
+export const metadata = {
   title: "Main",
   description: "List of movies",
 };
